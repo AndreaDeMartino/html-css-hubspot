@@ -33,7 +33,15 @@ nav ul li *{
   color: #3a4f62;
 }
 
+a:hover,
+a:active,
+a:focus {
+ color: blue;
+}
 
+a{
+  text-decoration: none;
+}
 
 
 /* Typography */
@@ -61,6 +69,21 @@ nav ul li *{
 h1{
   font-size: 50px;
   padding: 30px 0;
+}
+
+h2{
+  font-size: 30px;
+  padding: 15px 0;
+}
+
+h3{
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+
+h4{
+  font-size: 15px;
+  padding: 25px 0;
 }
 
 .small{
@@ -91,20 +114,10 @@ h1{
 
 /* Header */
 #main-header{
-height: 1000px;
 background-color: red;
 }
 
-/* Header_Rules: Interactive Text */
-#main-header a {
-  text-decoration: none;
-}
 
-#main-header a:hover,
-#main-header a:active,
-#main-header a:focus {
-  color: blue;
-}
 
 /* Header_Rules: Float Element */
 .left-top-nav,
@@ -210,3 +223,155 @@ background-color: red;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
 }
+
+
+
+
+
+/* Main */
+#general-main{
+  height: 4000px;
+  background-color: #f4f9fd;
+}
+
+/* Section Powerful Alone */
+.powerful{
+  text-align: center;
+  padding-top: 30px;
+}
+
+.powerful img{
+  height: 200px;
+}
+/* Section Free HubSpot CRM */
+
+.main-crm{
+  height: 400px;
+  background-color: white;
+  margin-top: 30px;
+}
+
+.learn-container{
+  height: 100%;
+  width: 40%;
+  text-align: center;
+}
+
+.learn-container,
+.info{
+  float:left;
+}
+
+.learn-container img{
+  height: 100px;
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+
+.info{
+  height: 100px;
+  width: 60%;
+  margin-top: 100px;
+  text-align: left;
+}
+
+.popolar{
+  position: relative;
+}
+
+.info h4::after{
+  content: '';
+  position:absolute;
+  bottom: 50%;
+  left: 43%;
+  width: 40%;
+  height: 1px;
+  transform: translateX(-50%);
+  background: grey;
+}
+
+.info ul li{
+  display: inline-block;
+}
+
+.info ul li:nth-child(2){
+  display: inline-block;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.info i{
+  color: #fe775a;
+  padding-right: 10px;
+}
+
+/* Section Hub Popolar Feature  */
+
+.hub{
+margin: 30px, 0;
+}
+
+.marketing,
+.sales,
+.service{
+  float:left;
+  position: relative;
+  height: 520px;
+  width: calc(92%/3);
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 2px;
+  padding: 0 100px;
+}
+
+.hub img{
+  height: 150px;
+  margin: 10px 0;
+}
+
+.sales{
+  margin: 0 4%;
+}
+
+.row2{
+  margin-top: 25px;
+  border-top: 1px solid black;
+}
+
+.row2 ul{
+  list-style: none;
+  text-align: left;
+}
+
+.row2 ul:last-child{
+}
+
+.row2 i{
+  color: #fe775a;
+  padding-right: 10px;
+}
+
+.button-bottom{
+  position:absolute;
+  left: 50%;
+  bottom: 0%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
