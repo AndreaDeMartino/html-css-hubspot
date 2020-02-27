@@ -6,7 +6,7 @@
 }
 
 body{
-  font-size: 16px;
+  font-size: 14px;
   color: #3a4f62;
 }
 
@@ -19,6 +19,15 @@ nav ul li{
   display: inline-block;
   padding: 0 7px;
 }
+
+nav ul li:first-child{
+  padding-left: 0px;
+}
+
+nav ul li:last-child{
+  padding-right: 0px;
+}
+
 
 nav ul li *{
   color: #3a4f62;
@@ -45,9 +54,18 @@ nav ul li *{
   color: white;
 }
 
+.button-big{
+  padding: 16px;
+}
 
+h1{
+  font-size: 50px;
+  padding: 30px 0;
+}
 
-
+.small{
+  font-size:12px;
+}
 
 
 /* Utility */
@@ -73,7 +91,7 @@ nav ul li *{
 
 /* Header */
 #main-header{
-height: 600px;
+height: 1000px;
 background-color: red;
 }
 
@@ -112,14 +130,12 @@ background-color: red;
 }
 
 .left-top-nav{
-  height: 100%;
-  width: 70%;
+  height: 100%;7
   text-align: left;
 }
 
 .right-top-nav{
   height: 100%;
-  width: 30%;
   text-align: right;
 }
 
@@ -131,41 +147,60 @@ background-color: red;
 
 
 
-
-
-
-
-
-
-
-
-
-
 /* Header: Bottom Nav */
 .box-bottom-nav{
   background-color: #ffffff;
   height: 80px;
 }
 
-.left-bottom-nav {
-  background-color: orange;
+.left-bottom-nav{
   height: 100%;
+  text-align: left;
+}
+
+.logo-hubspot{
+}
+
+.logo-hubspot img{
+  height: 30px;
+  margin: 25px 0;
 }
 
 .right-bottom-nav {
-  background-color: yellow;
   height: 100%;
+  text-align: right;
 }
+
+
+
 
 /* Header: Banner */
 .box-banner{
-  height: 360px;
+  height: 640px;
+  background-color: #fef6ef;
   background-image: url('../img/jumbotron.png');
+  background-position: 100% 0;
+  background-repeat: no-repeat;
+  background-size: 1500px;
 }
 
-.banner{
-  height: 250px;
-  background-color: azure;
+.text-banner{
+  height: 500px;
+  width: 40%;
+  background-color: #fef6ef;
+}
+
+/* Header: Banner: Sections */
+.banner-title{
+ height: 250px;
+}
+
+.banner-button{
+ height: 50px;
+}
+
+.banner-footer{
+  height: 50px;
 }
 
 /* Header: Separation Bar */
