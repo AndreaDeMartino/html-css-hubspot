@@ -5,9 +5,52 @@
   box-sizing: border-box;
 }
 
+body{
+  font-size: 16px;
+  color: #3a4f62;
+}
+
+nav ul{
+  list-style: none;
+  margin-top: 30px;
+}
+
+nav ul li{
+  display: inline-block;
+  padding: 0 7px;
+}
+
+nav ul li *{
+  color: #3a4f62;
+}
+
+
+
+
+/* Typography */
+
+.button{
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.button-white{
+  border: 1px solid #fe775a;
+  background-color: white;
+  color: #fe775a;
+}
+
+.button-orange{
+  background-color: #fe775a;
+  color: white;
+}
+
+
+
+
+
 
 /* Utility */
-
 .margin-container{
   height: 100%;
   width: 80%;
@@ -18,7 +61,6 @@
   width:50%;
 }
 
-
 .clearfix::after{
   content:"";
   display: table;
@@ -26,15 +68,27 @@
 }
 
 
-/* Header */
 
+
+
+/* Header */
 #main-header{
 height: 600px;
 background-color: red;
 }
 
-/* Header: Float Element */
+/* Header_Rules: Interactive Text */
+#main-header a {
+  text-decoration: none;
+}
 
+#main-header a:hover,
+#main-header a:active,
+#main-header a:focus {
+  color: blue;
+}
+
+/* Header_Rules: Float Element */
 .left-top-nav,
 .right-top-nav,
 .left-bottom-nav,
@@ -49,17 +103,43 @@ background-color: red;
   background-color: #f4f9fd;
 }
 
+.box-top-nav{
+  background-color: #f4f9fd;
+}
+
+.box-top-nav .margin-container{
+  background-color: #f4f9fd;
+}
+
 .left-top-nav{
   height: 100%;
   width: 70%;
-  background-color: green;
+  text-align: left;
 }
 
 .right-top-nav{
   height: 100%;
   width: 30%;
-  background-color: blue;
+  text-align: right;
 }
+
+.color-search{
+  color: #00a4bd;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Header: Bottom Nav */
 .box-bottom-nav{
