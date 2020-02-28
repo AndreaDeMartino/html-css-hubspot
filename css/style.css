@@ -62,6 +62,11 @@ a{
   color: white;
 }
 
+.button-grey{
+  background-color: #dadee0;
+  color: #33475a;
+}
+
 .button-big{
   padding: 16px;
 }
@@ -219,7 +224,6 @@ h4{
 
 /* Main */
 #general-main{
-  height: 4000px;
   background-color: #f4f9fd;
 }
 
@@ -448,3 +452,35 @@ text-align: center;
 }
 
 /* Footer */
+
+#mainfooter{
+  height: 400px;
+  background-color: #32495b;
+}
+
+.help{
+  height: 200px;
+}
+
+.help-element{
+  height: 300px;
+}
+
+.help h4{
+  color: white;
+}
+
+.help ul{
+  list-style: none;
+  text-align: left;
+  color: #8797a6;
+}
+
+.help ul li{
+ padding: 8px 0;
+}
+
+.help ul .social li{
+  display: inline-block;
+  padding-right: 20px;
+}
