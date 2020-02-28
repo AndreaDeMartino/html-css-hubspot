@@ -454,12 +454,14 @@ text-align: center;
 /* Footer */
 
 #mainfooter{
-  height: 400px;
   background-color: #32495b;
+  padding-bottom: 30px;
 }
 
+/* Footer: Section Help  */
 .help{
   height: 200px;
+  margin-bottom: 200px;
 }
 
 .help-element{
@@ -483,4 +485,47 @@ text-align: center;
 .help ul .social li{
   display: inline-block;
   padding-right: 20px;
+}
+
+/* Footer: Middle Bar */
+
+.middle-bar{
+padding-top: 30px;
+text-align: center;
+border-bottom: 1px solid white;
+}
+
+.middle-bar ul li{
+  list-style: none;
+  text-align: left;
+  color: #8797a6;
+}
+
+.middle-bar ul li{
+  display: inline-block;
+  padding: 20px;
+}
+
+.copyright-bar{
+  padding-top: 30px;
+}
+
+.copyright-right ul li{
+  display: inline-block;
+  list-style: none;
+  text-align: left;
+  padding-left: 10px;
+  color: #8797a6;
+}
+
+.copyright-left{
+  text-align: left;
+}
+
+.copyright-left p{
+  color: white;
+}
+
+.copyright-right{
+  text-align: right;
 }
