@@ -7,6 +7,7 @@
 
 body{
   font-size: 14px;
+  color: #33475a;
 }
 
 /* General Rules: Navigation Lists */
@@ -85,14 +86,6 @@ h4{
   padding: 25px 0;
 }
 
-.text-small{
-  font-size:12px;
-}
-
-.color-search{
-  color: #00a4bd;
-}
-
 /* Utility */
 .margin-container{
   height: 100%;
@@ -104,6 +97,10 @@ h4{
   width:50%;
 }
 
+.contain25{
+  width:25%;
+}
+
 .clearfix::after{
   content:"";
   display: table;
@@ -112,6 +109,25 @@ h4{
 
 .float{
   float:left;
+}
+
+.button-bottom{
+  position:absolute;
+  left: 50%;
+  bottom: 0%;
+  transform: translate(-50%, -50%);
+}
+
+.shadow{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+}
+
+.text-small{
+  font-size:12px;
+}
+
+.color-search{
+  color: #00a4bd;
 }
 
 .whitebox{
@@ -180,8 +196,13 @@ h4{
  height: 250px;
 }
 
+.banner-title p{
+  margin-right: 150px;
+}
+
 .banner-button{
  height: 50px;
+ margin-top: 20px;
 }
 
 .banner-footer{
@@ -211,6 +232,11 @@ h4{
 .powerful img{
   height: 200px;
 }
+
+.powerful p {
+  margin: 0 600px;
+}
+
 /* Section Free HubSpot CRM */
 .main-crm{
   height: 400px;
@@ -269,9 +295,14 @@ h4{
   padding-right: 10px;
 }
 
+.info p{
+  margin-right: 100px;
+}
+
 /* Section Hub Popolar Feature  */
 .hub{
 margin-top: 30px;
+text-align: center;
 }
 
 .marketing,
@@ -280,19 +311,17 @@ margin-top: 30px;
   position: relative;
   height: 520px;
   width: calc(92%/3);
-  text-align: center;
-  border: 1px solid black;
   border-radius: 2px;
-  padding: 0 100px;
-}
-
-.hub img{
-  height: 150px;
-  margin: 10px 0;
+  padding: 0 120px;
 }
 
 .sales{
   margin: 0 4%;
+}
+
+.hub .hub-row1 img{
+  height: 150px;
+  margin: 10px 0;
 }
 
 .hub-row2{
@@ -305,35 +334,117 @@ margin-top: 30px;
   text-align: left;
 }
 
-.hub-row2 ul:last-child{
-}
-
 .hub-row2 i{
   color: #fe775a;
   padding-right: 10px;
 }
 
-.button-bottom{
-  position:absolute;
-  left: 50%;
-  bottom: 0%;
-  transform: translate(-50%, -50%);
+/* Section Learn and grow */
+.learn-grow{
+  height: 600px;
+  background: rgb(0,167,186);
+  background: linear-gradient(90deg, rgba(0,167,186,1) 0%, rgba(4,173,180,1) 53%, rgba(0,183,171,1) 100%);
+  text-align: center;
+  color: white;
+  margin-top: 30px;
+  padding-top: 30px;
 }
 
+.learn-text p{
+  margin: 0 30px;
+}
 
+.learn-grow img{
+  height: 30px;
+}
 
+.learn-text{
+  padding-bottom: 50px;
+  margin: 0 300px;
+}
 
+.logo-table-row1 .logo-element{
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
+  padding: 30px;
+}
 
+.logo-table-row2 .logo-element{
+  border-left: 1px solid white;
+  padding: 30px;
+}
 
+.logo-table .logo-element:nth-child(1){
+  border-left: 0px solid white;
+}
 
+/* Section Growing With Hubspot */
 
+.grow{
+  padding-top: 30px;
+}
 
+.grow-bar{
+  width: 70%;
+  margin: 0 auto;
+}
 
+.grow-bar-left{
+  width: 40%;
+  text-align: left;
+}
 
+.grow-bar-left p{
+  padding-right: 400px;
+}
 
+.grow-bar-right{
+  margin-left: 10%;
+  width: 50%;
+}
 
+.grow-bottom-row{
+  padding-bottom: 20px;
+}
 
+.grow-element{
+  position: relative;
+  height: 40px;
+}
 
+.grow-element img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 130px;
+}
 
+.grow-bottom{
+  height: 400px;
+  padding-top: 50px;
+}
+
+.grow-bottom-left{
+  width: 40%;
+  padding-right: 220px;
+}
+
+.grow-bottom-button{
+  margin: 60px 0;
+}
+
+.grow-bottom-right{
+  position: relative;
+  width: 60%;
+}
+
+.grow-bottom-right img{
+  height: 300px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
 /* Footer */
