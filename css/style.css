@@ -29,14 +29,14 @@ nav ul li:last-child{
   padding-right: 0px;
 }
 
-nav ul li *{
-  color: #3a4f62;
+nav ul li a{
+  color: #33475a;
 }
 
 /* General Rules: Interactive Text */
 a:hover,
 a:active,
-a:focus {7
+a:focus {
  color: blue;
 }
 
@@ -44,8 +44,7 @@ a{
   text-decoration: none;
 }
 
-/* Typography */
-
+/* Buttons */
 .button{
   padding: 8px;
   border-radius: 4px;
@@ -71,6 +70,20 @@ a{
   padding: 16px;
 }
 
+.button-banner{
+  position: relative;
+  height: 50px;
+  margin: 30px 0;
+}
+
+.button-bottom{
+  position: absolute;
+  left: 50%;
+  bottom: 0%;
+  transform: translate(-50%, -50%);
+}
+
+/* Text */
 h1{
   font-size: 50px;
   padding: 30px 0;
@@ -91,10 +104,24 @@ h4{
   padding: 25px 0;
 }
 
+.text-small{
+  font-size:12px;
+}
+
+/* Colors list
+#33475a Body Text
+#fe775a Orange Button
+#dadee0 Grey Button
+#f4f9fd Background Top Header
+#fff3ee Background Header Banner
+#32495b Background Footer
+#8797a6 Text Footer
+*/
+
 /* Utility */
 .margin-container{
   height: 100%;
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -116,30 +143,66 @@ h4{
   float:left;
 }
 
-.button-bottom{
-  position:absolute;
-  left: 50%;
-  bottom: 0%;
-  transform: translate(-50%, -50%);
-}
-
 .shadow{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
-}
-
-.text-small{
-  font-size:12px;
-}
-
-.color-search{
-  color: #00a4bd;
 }
 
 .whitebox{
   background-color: white;
 }
 
-/* Header */
+.centerXY-item{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centerY-item{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.fake-br{
+  position: relative;
+}
+
+.fake-br *:after{
+  content: '';
+  position: absolute;
+  bottom: 50%;
+  left: 65%;
+  width: 65%;
+  height: 1px;
+  transform: translateX(-50%);
+  background: grey;
+}
+
+.vanillalist{
+  list-style: none;
+  text-align: left;
+}
+
+.vanillalist li{
+  padding: 0;
+}
+
+.vanillalist-iblock{
+  list-style: none;
+}
+
+.vanillalist-iblock li{
+  display: inline-block;
+  padding: 20px;
+}
+
+/* Icons */
+.color-search{
+  color: #00a4bd;
+}
+
+/* Begin Header */
 #main-header{
   background-color: #f4f9fd;
 }
@@ -159,6 +222,7 @@ h4{
   height: 100%;
   text-align: right;
 }
+/* Header: End Section Top Navigation */
 
 /* Header: Section Bottom Navigation */
 .box-bottom-nav{
@@ -170,15 +234,16 @@ h4{
   text-align: left;
 }
 
-.logo-hubspot img{
-  height: 30px;
-  margin: 25px 0;
-}
-
 .right-bottom-nav {
   height: 100%;
   text-align: right;
 }
+
+.logo-hubspot img{
+  height: 30px;
+  margin: 25px 0;
+}
+/* Header: End Section Bottom Navigation */
 
 /* Header: Section Banner */
 .box-banner{
@@ -190,29 +255,12 @@ h4{
   background-size: 1500px;
 }
 
-.text-banner{
-  height: 500px;
+.box-banner .text-banner{
+  height: 400px;
   width: 40%;
   background-color: #fff3ee;
 }
-
-/* Header: Banner: Sections Dimensions */
-.banner-title{
- height: 250px;
-}
-
-.banner-title p{
-  margin-right: 150px;
-}
-
-.banner-button{
- height: 50px;
- margin-top: 20px;
-}
-
-.banner-footer{
-  height: 50px;
-}
+/* Header: End Section Banner */
 
 /* Header: Separation Bar */
 .separation-bar{
@@ -221,14 +269,18 @@ h4{
   border-top: 2px solid black;
   border-bottom: 2px solid black;
 }
+/* Header: End Separation Bar */
 
-/* Main */
+/* End Header */
+
+/* Begin Main */
 #general-main{
   background-color: #f4f9fd;
 }
 
-/* Section Powerful Alone */
+/* Main: Begin Section Powerful Alone */
 .powerful{
+  height: 350px;
   text-align: center;
   padding-top: 30px;
 }
@@ -236,60 +288,41 @@ h4{
 .powerful img{
   height: 200px;
 }
+/* Main: End Powerful Alone */
 
-.powerful p {
-  margin: 0 600px;
-}
-
-/* Section Free HubSpot CRM */
+/* Main: Begin Section Free HubSpot CRM */
 .main-crm{
   height: 400px;
   margin-top: 30px;
 }
 
-.learn-container{
+.crm-left{
   height: 100%;
   width: 40%;
   text-align: center;
 }
 
-.learn-container img{
+.crm-left img{
   height: 100px;
   margin-top: 100px;
   margin-bottom: 40px;
 }
 
-.info-container{
+.crm-right{
   height: 100%;
   width: 40%;
   text-align: left;
+}
+
+.crm-right .vanillalist-iblock li{
+  padding: 0px;
 }
 
 .info{
   margin-top: 100px;
 }
 
-.popolar{
-  position: relative;
-}
-
-.info h4::after{
-  content: '';
-  position:absolute;
-  bottom: 50%;
-  left: 65%;
-  width: 65%;
-  height: 1px;
-  transform: translateX(-50%);
-  background: grey;
-}
-
-.info ul li{
-  display: inline-block;
-}
-
 .info ul li:nth-child(2){
-  display: inline-block;
   padding-right: 10px;
   padding-left: 10px;
 }
@@ -302,48 +335,46 @@ h4{
 .info p{
   margin-right: 100px;
 }
+/* Main: End Section Free HubSpot CRM */
 
-/* Section Hub Popolar Feature  */
+/* Main: Begin Section Hub Popolar Feature  */
 .hub{
+height: 550px;
 margin-top: 30px;
-text-align: center;
 }
 
 .marketing,
 .sales,
 .service{
-  position: relative;
-  height: 520px;
+  height: 530px;
   width: calc(92%/3);
   border-radius: 2px;
-  padding: 0 120px;
+  padding: 0 100px;
+  text-align: center;
+  position: relative;
 }
 
 .sales{
   margin: 0 4%;
 }
 
-.hub .hub-row1 img{
+.hub .hub-logo img{
   height: 150px;
   margin: 10px 0;
 }
 
-.hub-row2{
+.hub-info{
   margin-top: 25px;
   border-top: 1px solid black;
 }
 
-.hub-row2 ul{
-  list-style: none;
-  text-align: left;
-}
-
-.hub-row2 i{
+.hub-info i{
   color: #fe775a;
   padding-right: 10px;
 }
+/* Main: End Section Hub Popolar Feature  */
 
-/* Section Learn and grow */
+/* Main: Begin Section Learn and grow */
 .learn-grow{
   height: 600px;
   background: rgb(0,167,186);
@@ -354,6 +385,10 @@ text-align: center;
   padding-top: 30px;
 }
 
+.learn-text{
+  padding-bottom: 50px;
+}
+
 .learn-text p{
   margin: 0 30px;
 }
@@ -362,18 +397,11 @@ text-align: center;
   height: 30px;
 }
 
-.learn-text{
-  padding-bottom: 50px;
-  margin: 0 300px;
-}
-
-.logo-table-row1 .logo-element{
-  border-left: 1px solid white;
+.logo-table-border {
   border-bottom: 1px solid white;
-  padding: 30px;
 }
 
-.logo-table-row2 .logo-element{
+.logo-table .logo-element{
   border-left: 1px solid white;
   padding: 30px;
 }
@@ -381,16 +409,18 @@ text-align: center;
 .logo-table .logo-element:nth-child(1){
   border-left: 0px solid white;
 }
+/* Main: End Section Learn and grow */
 
-/* Section Growing With Hubspot */
-
+/* Main: Begin Section Growing With Hubspot */
 .grow{
-  padding-top: 30px;
+  height: 700px;
+  padding: 30px 0;
 }
 
 .grow-bar{
-  width: 70%;
+  width: 60%;
   margin: 0 auto;
+  padding: 30px 0;
 }
 
 .grow-bar-left{
@@ -399,7 +429,11 @@ text-align: center;
 }
 
 .grow-bar-left p{
-  padding-right: 400px;
+  padding-right: 300px;
+}
+
+.grow-bar-left h1{
+  padding-top: 0;
 }
 
 .grow-bar-right{
@@ -407,8 +441,8 @@ text-align: center;
   width: 50%;
 }
 
-.grow-bottom-row{
-  padding-bottom: 20px;
+.grow-row{
+  padding-bottom: 30px;
 }
 
 .grow-element{
@@ -421,47 +455,51 @@ text-align: center;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 130px;
+  max-width: 110px;
 }
 
-.grow-bottom{
+.grow-banner{
   height: 400px;
   padding-top: 50px;
 }
 
-.grow-bottom-left{
-  width: 40%;
-  padding-right: 220px;
+.grow-banner .text-banner{
+  height: 320px;
+  width: 30%;
 }
 
-.grow-bottom-button{
-  margin: 60px 0;
+.grow-banner .text-banner h2{
+  padding: 0 0 30px 0;
 }
 
-.grow-bottom-right{
+.grow-banner-right{
+  height: 320px;
   position: relative;
-  width: 60%;
+  width: 70%;
 }
 
-.grow-bottom-right img{
-  height: 300px;
+.grow-banner-right img{
+  height: 100%;
   position: absolute;
   top: 0;
-  left: 50%;
+  left: 70%;
   transform: translateX(-50%);
 }
+/* Main: End Section Growing With Hubspot */
 
-/* Footer */
+/* End Main */
 
+/* Begin Footer */
 #mainfooter{
-  background-color: #32495b;
   padding-bottom: 30px;
+  background-color: #32495b;
+  color: #8797a6;
 }
 
-/* Footer: Section Help  */
+/* Footer: Begin Section Help  */
 .help{
   height: 200px;
-  margin-bottom: 200px;
+  margin-bottom: 150px;
 }
 
 .help-element{
@@ -472,50 +510,33 @@ text-align: center;
   color: white;
 }
 
-.help ul{
-  list-style: none;
-  text-align: left;
-  color: #8797a6;
-}
-
-.help ul li{
+.help-element .vanillalist li{
  padding: 8px 0;
 }
 
-.help ul .social li{
-  display: inline-block;
-  padding-right: 20px;
+.help-element .vanillalist-iblock li{
+  padding: 8px;
 }
 
-/* Footer: Middle Bar */
+/* Footer: End Section Help  */
 
+/* Footer: Begin Section Middle Bar */
 .middle-bar{
-padding-top: 30px;
-text-align: center;
-border-bottom: 1px solid white;
+  height: 40px;
+  text-align: center;
+  border-bottom: 1px solid white;
 }
 
-.middle-bar ul li{
-  list-style: none;
-  text-align: left;
-  color: #8797a6;
+.middle-bar .vanillalist-iblock li{
+  text-align: center;
+  padding: 10px;
 }
+/* Footer: End Middle Bar */
 
-.middle-bar ul li{
-  display: inline-block;
-  padding: 20px;
-}
-
+/* Footer: Begin Copyright Bar */
 .copyright-bar{
+  height: 100px;
   padding-top: 30px;
-}
-
-.copyright-right ul li{
-  display: inline-block;
-  list-style: none;
-  text-align: left;
-  padding-left: 10px;
-  color: #8797a6;
 }
 
 .copyright-left{
@@ -529,3 +550,10 @@ border-bottom: 1px solid white;
 .copyright-right{
   text-align: right;
 }
+
+.copyright-right  .vanillalist-iblock li{
+  padding: 0 0 10px 0;
+}
+/* Footer: End Copyright Bar */
+
+/* End Footer */
